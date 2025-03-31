@@ -1,7 +1,6 @@
-package com.jlopez.recipesapp.data.api
+package com.jlopez.recipesapp.data.remote
 
-import com.jlopez.recipesapp.data.remote.ApiService
-import com.jlopez.recipesapp.utils.Constants.Companion.BASE_URL
+import com.jlopez.recipesapp.utils.Constants
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -19,7 +18,7 @@ class RetrofitInstance {
                 .build()
 
             Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(Constants.Companion.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()

@@ -48,8 +48,8 @@ class RecipeActivity : AppCompatActivity() {
     private fun showIngredientsDialog(recipe: Recipe) {
         AlertDialog.Builder(this)
             .setTitle(recipe.name)
-            .setMessage("Ingredientes:" + recipe.ingredients)
-            .setPositiveButton("OK", null)
+            .setMessage(getString(R.string.ingredientes) + recipe.ingredients.toString().replace("[", "").replace("]", ""))
+            .setPositiveButton(getString(R.string.ok), null)
             .show()
     }
 }

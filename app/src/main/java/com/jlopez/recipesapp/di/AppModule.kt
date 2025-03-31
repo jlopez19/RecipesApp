@@ -2,7 +2,7 @@ package com.jlopez.recipesapp.di
 
 import android.app.Application
 import androidx.room.Room
-import com.jlopez.recipesapp.data.api.RetrofitInstance
+import com.jlopez.recipesapp.data.remote.RetrofitInstance
 import com.jlopez.recipesapp.data.local.RecipeDao
 import com.jlopez.recipesapp.data.local.RecipeDatabase
 import com.jlopez.recipesapp.data.remote.ApiService
